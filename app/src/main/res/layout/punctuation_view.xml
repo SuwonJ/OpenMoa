@@ -412,7 +412,7 @@
         style="@style/KeyStyle"
         android:text="@string/key_space"
         app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintHorizontal_weight="2.5"
+        app:layout_constraintHorizontal_weight="2"
         app:layout_constraintTop_toTopOf="@+id/hanjaNumberPunctuationKey"
         app:layout_constraintBottom_toBottomOf="@+id/hanjaNumberPunctuationKey"
         app:layout_constraintLeft_toRightOf="@+id/languageKey"
