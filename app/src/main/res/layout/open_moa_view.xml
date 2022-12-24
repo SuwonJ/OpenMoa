@@ -79,13 +79,15 @@
     <TextView
         android:id="@+id/emojiKey"
         style="@style/KeyStyle"
-        android:text="@string/key_emoji"
+        android:foreground="@drawable/ic_baseline_insert_emoticon_24"
+        android:foregroundGravity="center"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tildeKey"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintTop_toTopOf="@+id/tildeKey"
-        app:layout_constraintBottom_toBottomOf="@+id/tildeKey"
         app:layout_constraintLeft_toRightOf="@+id/ssangsiotKey"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tildeKey" />
 
     <!-- Second Line -->
 
@@ -353,14 +355,16 @@
     <TextView
         android:id="@+id/languageKey"
         style="@style/KeyStyle"
-        android:text="@string/key_language"
+        android:foreground="@drawable/ic_baseline_language_24"
+        android:foregroundGravity="center"
+        android:text=""
         android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hanjaNumberPunctuationKey"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintTop_toTopOf="@+id/hanjaNumberPunctuationKey"
-        app:layout_constraintBottom_toBottomOf="@+id/hanjaNumberPunctuationKey"
         app:layout_constraintLeft_toRightOf="@+id/hanjaNumberPunctuationKey"
-        app:layout_constraintRight_toLeftOf="@+id/spaceKey" />
+        app:layout_constraintRight_toLeftOf="@+id/spaceKey"
+        app:layout_constraintTop_toTopOf="@+id/hanjaNumberPunctuationKey" />
 
 
 

@@ -519,14 +519,16 @@
     <TextView
         android:id="@+id/languageKey"
         style="@style/KeyStyle"
-        android:text="@string/key_language"
+        android:foreground="@drawable/ic_baseline_language_24"
+        android:foregroundGravity="center"
+        android:text=""
         android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hanjaNumberPunctuationKey"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintTop_toTopOf="@+id/hanjaNumberPunctuationKey"
-        app:layout_constraintBottom_toBottomOf="@+id/hanjaNumberPunctuationKey"
         app:layout_constraintLeft_toRightOf="@+id/hanjaNumberPunctuationKey"
-        app:layout_constraintRight_toLeftOf="@+id/spaceKey" />
+        app:layout_constraintRight_toLeftOf="@+id/spaceKey"
+        app:layout_constraintTop_toTopOf="@+id/hanjaNumberPunctuationKey" />
 
 
 
@@ -536,7 +538,7 @@
         style="@style/KeyStyle"
         android:text="@string/key_space"
         app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintHorizontal_weight="2.5"
+        app:layout_constraintHorizontal_weight="2"
         app:layout_constraintTop_toTopOf="@+id/hanjaNumberPunctuationKey"
         app:layout_constraintBottom_toBottomOf="@+id/hanjaNumberPunctuationKey"
         app:layout_constraintLeft_toRightOf="@+id/languageKey"
