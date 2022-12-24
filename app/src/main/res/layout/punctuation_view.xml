@@ -276,7 +276,7 @@
         app:layout_constraintHorizontal_weight="1.5"
         app:layout_constraintVertical_weight="1.25"
         app:layout_constraintTop_toBottomOf="@+id/beforeASpace"
-        app:layout_constraintBottom_toTopOf="@+id/languageKey"
+        app:layout_constraintBottom_toTopOf="@+id/hanjaNumberPunctuationKey"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/zKey" />
 
@@ -379,9 +379,9 @@
     <!-- Fourth Line -->
 
     <TextView
-        android:id="@+id/languageKey"
+        android:id="@+id/hanjaNumberPunctuationKey"
         style="@style/KeyStyle"
-        android:text="@string/key_language"
+        android:text="@string/key_hanja_number_punctuation"
         android:textSize="14sp"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintVertical_chainStyle="spread"
@@ -390,19 +390,20 @@
         app:layout_constraintTop_toBottomOf="@+id/nextKey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/hanjaNumberPunctuationKey" />
+        app:layout_constraintRight_toLeftOf="@+id/languageKey" />
 
     <TextView
-        android:id="@+id/hanjaNumberPunctuationKey"
+        android:id="@+id/languageKey"
         style="@style/KeyStyle"
-        android:text="@string/key_hanja_number_punctuation"
-        android:textSize="14sp"
+        android:text="@string/key_language"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintTop_toTopOf="@+id/languageKey"
-        app:layout_constraintBottom_toBottomOf="@+id/languageKey"
-        app:layout_constraintLeft_toRightOf="@+id/languageKey"
-        app:layout_constraintRight_toLeftOf="@+id/spaceKey" />
+        app:layout_constraintTop_toTopOf="@+id/hanjaNumberPunctuationKey"
+        app:layout_constraintBottom_toBottomOf="@+id/hanjaNumberPunctuationKey"
+        app:layout_constraintLeft_toRightOf="@+id/hanjaNumberPunctuationKey"
+        app:layout_constraintRight_toLeftOf="@+id/spaceKey"/>
+
+
 
     <TextView
         android:id="@+id/spaceKey"
@@ -410,9 +411,9 @@
         android:text="@string/key_space"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintHorizontal_weight="2.5"
-        app:layout_constraintTop_toTopOf="@+id/languageKey"
-        app:layout_constraintBottom_toBottomOf="@+id/languageKey"
-        app:layout_constraintLeft_toRightOf="@+id/hanjaNumberPunctuationKey"
+        app:layout_constraintTop_toTopOf="@+id/hanjaNumberPunctuationKey"
+        app:layout_constraintBottom_toBottomOf="@+id/hanjaNumberPunctuationKey"
+        app:layout_constraintLeft_toRightOf="@+id/languageKey"
         app:layout_constraintRight_toLeftOf="@+id/arrowKey" />
 
     <TextView
@@ -422,8 +423,8 @@
         android:textSize="14sp"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintTop_toTopOf="@+id/languageKey"
-        app:layout_constraintBottom_toBottomOf="@+id/languageKey"
+        app:layout_constraintTop_toTopOf="@+id/hanjaNumberPunctuationKey"
+        app:layout_constraintBottom_toBottomOf="@+id/hanjaNumberPunctuationKey"
         app:layout_constraintLeft_toRightOf="@+id/spaceKey"
         app:layout_constraintRight_toLeftOf="@+id/enterKey" />
 
@@ -433,8 +434,8 @@
         android:text="@string/key_enter"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintTop_toTopOf="@+id/languageKey"
-        app:layout_constraintBottom_toBottomOf="@+id/languageKey"
+        app:layout_constraintTop_toTopOf="@+id/hanjaNumberPunctuationKey"
+        app:layout_constraintBottom_toBottomOf="@+id/hanjaNumberPunctuationKey"
         app:layout_constraintLeft_toRightOf="@+id/arrowKey"
         app:layout_constraintRight_toRightOf="parent" />
 
