@@ -48,8 +48,10 @@
 
     <TextView
         android:id="@+id/backspaceKey"
-        style="@style/KeyStyle"
-        android:text="@string/key_backspace"
+        style="@style/KeyStyleNTR1"
+        android:foreground="@drawable/ic_baseline_keyboard_backspace_24"
+        android:foregroundGravity="center"
+        android:text=""
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintVertical_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
@@ -99,7 +101,7 @@
 
     <TextView
         android:id="@+id/minusKey"
-        style="@style/KeyStyle"
+        style="@style/KeyStyleNTR1"
         android:text="@string/key_minus"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintVertical_chainStyle="spread"
@@ -150,7 +152,7 @@
 
     <TextView
         android:id="@+id/dotKey"
-        style="@style/KeyStyle"
+        style="@style/KeyStyleNTR1"
         android:text="@string/key_dot"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintVertical_chainStyle="spread"
@@ -164,9 +166,10 @@
 
     <TextView
         android:id="@+id/punctuationKey"
-        style="@style/KeyStyle"
-        android:text="@string/key_punctuation"
+        style="@style/KeyStyleACC1"
+        android:text="@string/key_hanja_number_punctuation"
         android:textSize="14sp"
+        android:textColor="#000000"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintVertical_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
@@ -189,7 +192,7 @@
 
     <TextView
         android:id="@+id/spaceKey"
-        style="@style/KeyStyle"
+        style="@style/KeyStyleNTR1"
         android:text="@string/key_space"
         android:textSize="14sp"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -201,8 +204,10 @@
 
     <TextView
         android:id="@+id/enterKey"
-        style="@style/KeyStyle"
-        android:text="@string/key_enter"
+        style="@style/KeyStyleACC1"
+        android:foreground="@drawable/ic_baseline_subdirectory_arrow_left_24"
+        android:foregroundGravity="center"
+        android:text=""
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintTop_toTopOf="@+id/punctuationKey"

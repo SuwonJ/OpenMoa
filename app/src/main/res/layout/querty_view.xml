@@ -393,7 +393,7 @@
 
     <TextView
         android:id="@+id/shiftKey"
-        style="@style/KeyStyle"
+        style="@style/KeyStyleNTR1"
         tools:text="⇧"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintVertical_chainStyle="spread"
@@ -490,23 +490,26 @@
 
     <TextView
         android:id="@+id/backspaceKey"
-        style="@style/KeyStyle"
-        android:text="@string/key_backspace"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintHorizontal_weight="1.5"
-        app:layout_constraintTop_toTopOf="@+id/shiftKey"
+        style="@style/KeyStyleNTR1"
+        android:foreground="@drawable/ic_baseline_keyboard_backspace_24"
+        android:foregroundGravity="center"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="@+id/shiftKey"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1.5"
         app:layout_constraintLeft_toRightOf="@+id/mKey"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shiftKey"
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <!-- Fifth Line -->
 
     <TextView
         android:id="@+id/hanjaNumberPunctuationKey"
-        style="@style/KeyStyle"
+        style="@style/KeyStyleACC1"
         android:text="@string/key_hanja_number_punctuation"
         android:textSize="14sp"
+        android:textColor="#000000"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintVertical_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
@@ -518,7 +521,7 @@
 
     <TextView
         android:id="@+id/languageKey"
-        style="@style/KeyStyle"
+        style="@style/KeyStyleNTR1"
         android:foreground="@drawable/ic_baseline_language_24"
         android:foregroundGravity="center"
         android:text=""
@@ -546,7 +549,7 @@
 
     <TextView
         android:id="@+id/commaQuestionDotExclamationKey"
-        style="@style/KeyStyle"
+        style="@style/KeyStyleNTR1"
         android:text="@string/key_comma_question_dot_exclamation"
         android:textSize="14sp"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -558,8 +561,10 @@
 
     <TextView
         android:id="@+id/enterKey"
-        style="@style/KeyStyle"
-        android:text="@string/key_enter"
+        style="@style/KeyStyleACC1"
+        android:foreground="@drawable/ic_baseline_subdirectory_arrow_left_24"
+        android:foregroundGravity="center"
+        android:text=""
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintTop_toTopOf="@+id/hanjaNumberPunctuationKey"

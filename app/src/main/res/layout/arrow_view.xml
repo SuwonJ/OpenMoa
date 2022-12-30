@@ -200,7 +200,9 @@
     <TextView
         android:id="@+id/backspaceKey"
         style="@style/KeyStyle"
-        android:text="@string/key_backspace"
+        android:foreground="@drawable/ic_baseline_keyboard_backspace_24"
+        android:foregroundGravity="center"
+        android:text=""
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintVertical_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
@@ -213,9 +215,10 @@
 
     <TextView
         android:id="@+id/hanjaNumberPunctuationKey"
-        style="@style/KeyStyle"
+        style="@style/KeyStyleACC1"
         android:text="@string/key_hanja_number_punctuation"
         android:textSize="14sp"
+        android:textColor="#000000"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintVertical_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
@@ -255,8 +258,10 @@
 
     <TextView
         android:id="@+id/enterKey"
-        style="@style/KeyStyle"
-        android:text="@string/key_enter"
+        style="@style/KeyStyleACC1"
+        android:foreground="@drawable/ic_baseline_subdirectory_arrow_left_24"
+        android:foregroundGravity="center"
+        android:text=""
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintTop_toTopOf="@+id/hanjaNumberPunctuationKey"

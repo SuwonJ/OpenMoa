@@ -24,22 +24,26 @@ open class BaseKeyTouchListener(context: Context) : OnTouchListener, KoinCompone
     private val broadcastManager = LocalBroadcastManager.getInstance(context)
     private val backgrounds = listOf(
         ContextCompat.getDrawable(context, R.drawable.key_background_pressed),
-        ContextCompat.getDrawable(context, R.drawable.key_background),
+        ContextCompat.getDrawable(context, R.drawable.key_background), ///////////키 배경
+        ContextCompat.getDrawable(context, R.drawable.key_background_acc1),
     )
 
     override fun onTouch(view: View, motionEvent: MotionEvent): Boolean {
         when (motionEvent.action) {
             MotionEvent.ACTION_DOWN -> {
-                view.background = backgrounds[0]
+                if( view.background==backgrounds[0] || view.background==backgrounds[1])     view.background = backgrounds[0]
+                else if( view.background==backgrounds[0] || view.background==backgrounds[2])     view.background = backgrounds[0]
                 if (config.hapticFeedback) {
                     view.performHapticFeedback(HapticFeedbackConstants.KEYBOARD_PRESS)
                 }
             }
             MotionEvent.ACTION_CANCEL -> {
-                view.background = backgrounds[1]
+                if( view.background==backgrounds[0] || view.background==backgrounds[1])     view.background = backgrounds[1]
+                else if( view.background==backgrounds[0] || view.background==backgrounds[2])     view.background = backgrounds[2]
             }
             MotionEvent.ACTION_UP -> {
-                view.background = backgrounds[1]
+                if( view.background==backgrounds[0] || view.background==backgrounds[1])     view.background = backgrounds[1]
+                else if( view.background==backgrounds[0] || view.background==backgrounds[2])     view.background = backgrounds[2]
                 view.performClick()
             }
         }

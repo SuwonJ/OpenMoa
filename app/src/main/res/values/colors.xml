@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="keyboard_background">@android:color/system_neutral2_50</color>
-    <color name="key_background">@android:color/system_neutral2_0</color>
-    <color name="key_background_pressed">@android:color/system_neutral2_50</color>
-    <color name="key_foreground">@android:color/system_neutral1_900</color>
-    <color name="key_foreground_locked">@android:color/system_neutral1_600</color>
+    <color name="keyboard_background">@android:color/system_neutral1_900</color>
+    <color name="key_background">@android:color/system_neutral1_800</color>
+    <color name="key_background_pressed">@android:color/system_neutral1_900</color>
+    <color name="key_background_acc1">@android:color/system_accent1_100</color>
+    <color name="key_background_ntr1">@android:color/system_neutral1_700</color>
+    <color name="key_background_pressed_acc1">@android:color/system_neutral1_900</color>
+    <color name="key_foreground">@android:color/system_neutral1_50</color>
+    <color name="key_foreground_locked">@android:color/system_neutral1_400</color>
 </resources>

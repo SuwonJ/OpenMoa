@@ -14,6 +14,32 @@
         <item name="android:hapticFeedbackEnabled">true</item>
     </style>
 
+    <style name="KeyStyleACC1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/key_foreground</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/key_background_acc1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:hapticFeedbackEnabled">true</item>
+    </style>
+
+    <style name="KeyStyleNTR1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/key_foreground</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/key_background_ntr1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:hapticFeedbackEnabled">true</item>
+    </style>
+
     <style name="KeyboardStyle">
         <item name="android:background">@color/keyboard_background</item>
     </style>
