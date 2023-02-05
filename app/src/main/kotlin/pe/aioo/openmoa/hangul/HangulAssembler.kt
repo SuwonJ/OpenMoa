@@ -155,7 +155,17 @@ class HangulAssembler {
         )
         return jamoList.last() != lastJamo
     }
-
+    /*
+    fun isKoreanConsonant(c: String): Boolean {
+        val codePoint =4356;
+        if(codePoint>=4352&&codePoint>=4607){
+            return true
+        }
+        else{
+            return false
+        }
+    }
+*/
     private fun resolveJamoList(forceResolve: Boolean = false): String? {
         try {
             val assembled = HangulParser.assemble(jamoList)

@@ -33,6 +33,7 @@ open class BaseKeyTouchListener(context: Context) : OnTouchListener, KoinCompone
             MotionEvent.ACTION_DOWN -> {
                 if( view.background==backgrounds[0] || view.background==backgrounds[1])     view.background = backgrounds[0]
                 else if( view.background==backgrounds[0] || view.background==backgrounds[2])     view.background = backgrounds[0]
+                else    view.background = backgrounds[0]
                 if (config.hapticFeedback) {
                     view.performHapticFeedback(HapticFeedbackConstants.KEYBOARD_PRESS)
                 }
@@ -40,10 +41,12 @@ open class BaseKeyTouchListener(context: Context) : OnTouchListener, KoinCompone
             MotionEvent.ACTION_CANCEL -> {
                 if( view.background==backgrounds[0] || view.background==backgrounds[1])     view.background = backgrounds[1]
                 else if( view.background==backgrounds[0] || view.background==backgrounds[2])     view.background = backgrounds[2]
+                else    view.background = backgrounds[0]
             }
             MotionEvent.ACTION_UP -> {
                 if( view.background==backgrounds[0] || view.background==backgrounds[1])     view.background = backgrounds[1]
                 else if( view.background==backgrounds[0] || view.background==backgrounds[2])     view.background = backgrounds[2]
+                else    view.background = backgrounds[0]
                 view.performClick()
             }
         }
