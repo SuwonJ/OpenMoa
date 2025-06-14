@@ -297,7 +297,9 @@ class OpenMoaIME : InputMethodService(), KoinComponent {
                                     KeyEvent.KEYCODE_MOVE_HOME, KeyEvent.META_CTRL_ON, true
                                 )
                             }
-                            SpecialKey.EMOJI -> Unit
+                            SpecialKey.EMOJI -> {
+                                sendKeyDownUpEvent(KeyEvent.KEYCODE_V, KeyEvent.META_CTRL_ON)
+                            }
                         }
                     }
                     is String -> {

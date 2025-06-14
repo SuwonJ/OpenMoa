@@ -79,7 +79,7 @@
     <TextView
         android:id="@+id/emojiKey"
         style="@style/KeyStyleNTR1"
-        android:foreground="@drawable/ic_baseline_insert_emoticon_24"
+        android:foreground="@drawable/outline_assignment_24"
         android:foregroundGravity="center"
         android:text=""
         app:layout_constraintBottom_toBottomOf="@+id/tildeKey"
