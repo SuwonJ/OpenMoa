@@ -40,6 +40,7 @@ import pe.aioo.openmoa.view.keyboardview.qwerty.QuertyView
 import pe.aioo.openmoa.view.message.SpecialKey
 import java.io.Serializable
 import kotlin.math.roundToInt
+import androidx.core.view.isEmpty
 
 class OpenMoaIME : InputMethodService(), KoinComponent {
 
@@ -589,7 +590,7 @@ class OpenMoaIME : InputMethodService(), KoinComponent {
             )
             inlineSuggestion.inflate(this, size, mainExecutor) { view ->
                 if (inlineSuggestion.info.isPinned) {
-                    if (binding.suggestionStripStartChipGroup.childCount == 0) {
+                    if (binding.suggestionStripStartChipGroup.isEmpty()) {
                         binding.suggestionStripStartChipGroup.addView(view)
                     } else {
                         binding.suggestionStripEndChipGroup.addView(view)
